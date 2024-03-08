@@ -1,0 +1,58 @@
+<!--
+! HTML Forms & Tables
+! (Notes will be only new knowledge or parts I'd like to reinforce)
+
+* Tables should only be used today to layout tabular content.
+? Trivia: In the older days of the internet, tables were sometimes used to design entire webpages.
+Tables are generally, in my experience and in my instructor's, a pain due to the staggering amount of elements needed to construct them.
+Here's a refresher of the general structure:
+-->
+
+<table>
+  <thead> <!-- Mostly Semantic, denotes the start and end of the header of a table. -->
+    <tr>  <!--Table row - Groups content together in a row -->
+      <th>Table Row Header #1</th> <!-- Defines a header, placed in a row -->
+      <th>Table Row Header #2</th>
+    </tr>
+  </thead>
+  <tbody> <!-- Again, semantic, but contains the main content of our table. -->
+    <tr>
+      <td>Content</td> <!-- Table Data -->
+      <td>Content</td> <!-- Other Related Table Data -->
+    </tr>
+  </tbody>
+</table>
+
+<!--
+! Colspan and Rowspan
+* These attributes let us designate specific spacing for columns and rows.
+
+
+! HTML Forms
+* The <form> element itself is basically a shell or container; it doesn't have any visual effect.
+* The action attribute specifies WHERE the form data should be sent.
+* The method specifies which HTTP method should be used (i.e. GET, POST, etc.)
+
+! Inputs & Labels
+As of writing this, there are over 20+ types of inputs we can choose from to include in a form, radically changing the behavior of an input's behavior and/or appearance.
+
+* Labels do way more than just providing context for our forms and inputs, they link elements together and it's especially important for accessibility.
+* It also makes the label clickable!
+
+? Inputs take an id attribute and labels take a for attribute.
+! These two should match together.
+
+? The name attribute is what we send to the server for processing and should be on every input you use.
+-->
+
+<form action="https://www.google.com/search">
+  <label for="search">Make a Query</label>
+  <input type="text" name="q" id="search">
+  <button>Search Google</button>
+</form>
+
+<form action="https://youtube.com/results">
+  <label for="searchYoutube">Make a Video Query</label>
+  <input type="text" name="search_query" id="searchYoutube">
+  <button>Search YouTube</button>
+</form>
