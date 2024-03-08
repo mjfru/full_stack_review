@@ -13,4 +13,27 @@
       <p>H<sub>2</sub>O</p> -- H2O
 
 ? Trivia: <div> is short for 'The Content Division Element'.
+
+! HTTP Entities
+* Special codes and symbols that are reserved for creating symbols or hard-to-type characters.
+They all start with an ampersand (&) and end with a semicolon (;).
+The browser interprets them and renders the correct character instead of what you actually typed.
+They are also used for reserved symbols, such as a < or > that are used commonly in HTML and might be interpreted as such by VSCode and/or our browser.
+? Typically there are two ways to declare these; an entity name or an entity number.
+
+! Semantic Markup
+? Answers the question - What purpose or role does that HTML element have?
+The old-style was to just add divs, maybe with some identification in the class or id name.
+These days, elements like <main>, <section>, <nav>, <header>, <footer> etc. gives us more clarity on what exactly we're looking at and what that section does.
+* This markup gives our code meaning, allows search engines to better identify meaningful content, helps screen-readers for better accessibility, and makes it easier for ourselves and our devs to read.
+
+? Let's look at some of these elements in more detail:
+
+<main> - Used for, well, the main content, not the navbar, sidebar, anything repeatable, etc.
+<nav> - Represents anything (like links) that provides navigation on our page and/or to other pages.
+<section> - Simply shows that this part of your webpage is a standalone section of content. I.E. a section of content on a Wikipedia page.
+<article> - Represents a self-contained composition in a document that is independently distributable or reusable; should have some kind of heading explaining what it is.
+<aside> - Something that is indirectly related, a sidebar, for example.
+<header> & <footer> - Self-explanatory (but can be used in sections of your page as well, not just the entire webpage)!
+
 -->
