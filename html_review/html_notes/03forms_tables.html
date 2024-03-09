@@ -56,3 +56,70 @@ As of writing this, there are over 20+ types of inputs we can choose from to inc
   <input type="text" name="search_query" id="searchYoutube">
   <button>Search YouTube</button>
 </form>
+
+<!--
+! Checkboxes, Radio Buttons, Select
+? Checkboxes have the value of 'on' if checked and 'off' if not.
+
+* Radio buttons, to be associated together, all need the same name.
+! Radio buttons also need an attribute of value in order to pass information to the server to process.
+
+Select is basically a drop-down menu and has options nested within.
+-->
+
+<form action="/nonsense">
+  <input type="checkbox" name="agree" id="agree">
+  <label for="agree">I agree</label>
+  <p>
+    <label for="s">S</label>
+    <input type="radio" name="size" id="s" value="s">
+    <label for="m">M</label>
+    <input type="radio" name="size" id="m" value="m">
+    <label for="l">L</label>
+    <input type="radio" name="size" id="l" value="l">
+  </p>
+  <p>
+    <label for="meal">Please Select an Entree</label>
+    <select name="meal" id="meal">
+      <option value="">--Please select below--</option>
+      <option value="fish">Fish</option>
+      <option value="vegetarian">Vegetarian</option>
+      <option value="steak">Steak</option>
+    </select>
+  </p>
+  <p>
+    <label for="cheese">Amount of Cheese (kg):</label>
+    <input type="range" name="cheese" id="cheese" min="0" max="10" value="6" step="2">
+    <button>Gimme Cheese</button>
+  </p>
+  <label for="requests">Any special requests?</label>
+  <br>
+  <textarea name="requests" id="requests" cols="20" rows="5"></textarea>
+  <br>
+  <button>Submit</button>
+</form>
+
+<!--
+! Range & Text Area
+* Range is a slider-type input, it takes a min, max, and value (if you want to set a starting point)
+* Textarea is NOT an input.
+
+! Validations in HTML5
+* The attribute 'require' tells the browser to require information to be entered in a certain input.
+* The minlength and maxlength requires something be between those specified character lengths before continuing.
+? The attributes min and max are used for numeric values.
+* Specifying a type of email or url also makes an input require certain elements to continue (an '@' for example in an email address).
+-->
+
+<h2>Validation in HTML Demo</h2>
+  <form action="/validation">
+    <p>
+      <label for="first">First Name:</label>
+      <input type="text" name="first" id="first" required>
+    </p>
+    <p>
+      <label for="username">Username:</label>
+      <input type="text" name="username" id="username" minlength="5" maxlength="20" required>
+    </p>
+    <button>Register</button>
+  </form>
