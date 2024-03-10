@@ -2,5 +2,78 @@
 ! CSS Selectors
 ! (Notes will be only new knowledge or parts I'd like to reinforce) 
 
+* Remember, a comma denotes 'and'...a space indicates descension for selectors.
+
+* The adjacent selector / combinator (+) selects something that is immediately preceded by something.
+
+* The direct child selector (>) selects only items that are direct descendants of the first element.
+
+* The attribute selector lets us target specific elements with certain attributes (such as inputs with different types).
 */
 
+li, a { /* Selects list items AND anchor tags */
+    color: blueviolet
+}
+
+li a { /* Selects anchor tags inside of list items */
+    color: teal;
+}
+
+input + button { /* Turns a button immediately following an input to aqua */
+    background-color: aqua;
+}
+
+footer > a { /* Selects only a tags that are direct descendants of the footer. */
+    font-size: 12px;
+}
+
+input[type="password"] { /* Targets only inputs with the type of 'password'. */
+    background-color: black;
+    color: white;
+}
+
+a[href$=".edu"] { /* Targets only anchor tags ending in .edu */
+    color: green;
+}
+
+/*
+! Pseudo Classes
+* These are keywords added to a selector that specifies a special state of the selected element(s).
+? Examples:
+    :active
+    :checked
+    :hover
+    :nth-child()
+*/
+
+.post button:hover {
+    color: orangered;
+    cursor: pointer;
+}
+
+.post:nth-of-type(2) { /* Selects every other post class */
+    color: darkgrey;
+}
+
+/*
+! Pseudo Elements
+* Keyword added to a selector that lets you style a particular part of the selected element(s).
+? Examples:
+    ::after
+    ::before
+    ::first-letter
+    ::first-line
+    ::selection
+*/
+
+h2::first-letter { /* Makes the first letter of h2 tags have a font size of 48px. */
+    font-size: 48px;
+}
+
+p::first-line {
+    color: burlywood;
+}
+
+p::selection {  /* When a user selects a p tag on the page, it turns it a different color. */
+    background-color: aquamarine;
+}
