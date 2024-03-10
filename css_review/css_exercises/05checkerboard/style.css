@@ -1,0 +1,13 @@
+/*
+The index.html file contains 25 <div> elements, each with the class of square.
+Please create a simple checkerboard pattern by making the even squares black and the odd squares red.
+Your result should look like the image below.
+*/
+
+.square:nth-of-type(odd) {
+    background-color: red;
+}
+
+.square:nth-of-type(even) {
+    background-color: black;
+}
