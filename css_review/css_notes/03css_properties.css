@@ -1,0 +1,23 @@
+/*
+! A Mixed Bag of CSS Properties
+! (Notes will be only new knowledge or parts I'd like to reinforce) 
+
+* Position: Sets how an element is positioned in a document.
+    ? Static - The default value
+    ? Relative - Keeps the element in the regular flow of the document but is able to be positioned and offset.
+    ? Absolute - Removed from the normal flow and doesn't take up any space.
+        ! It is positioned relative to its closest positioned ancestor.
+    ? Fixed - Removed from the normal document flow and no space is created for the element.
+    ?   It is positioned relative to the initial containing block.
+    *   Useful for navbars and such that move with you as you scroll the page.
+
+* Transitions - Changing one Property Value to Another (with some grace!)
+    Rather than just hover effects (for example), which are immediate, we can add transition timings to slow the change down.
+    ? With transitions, we can specify the property name, delay, timing functions (ease-in, linear, cubic-bezier, etc.)
+
+* Transform - Essentially an animation (when paired with transition) you can apply to an element, such as rotate, rotateY, scale, translate (move around), and skew.
+    ? Transform-origin will select which area of the element to transform from.
+
+! When using background size, it may only be included immediately after <position>, seperated with the '/' character...
+    ? "center/80%"
+*/
