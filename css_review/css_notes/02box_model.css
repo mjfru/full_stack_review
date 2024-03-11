@@ -1,0 +1,42 @@
+/*
+! The Box Model Review Notes
+! (Notes will be only new knowledge or parts I'd like to reinforce) 
+
+* The idea that everything in our webpage is technically a box; standalone, stacked, overlapping, etc.
+
+! The Display Property
+? Reminder: Inline elements fit in alongside other elements; block level take up a whole 'block' of space.
+? Inline-block behaves like an inline element except that width, height, margin, and padding are going to be respected now.
+
+*/
+
+h1 {
+    display: inline; /* The default setting for h1 is now changed from block to inline. */
+}
+
+span {
+    display: block; /* Span is now changed from its default inline setting to block. */
+}
+
+/*
+! CSS Relative Units
+* Percentages are ALWAYS relative to some other value, from a parent or itself.
+
+* EM(s) are relative units.
+    With font size, 1em equals the font-size of the parent.
+    2em would be twice the font-size of the parent.
+    With other properties, 1em is equal to the computed font-size of the element itself.
+    ? One common problem with EM(s) is that nested elements become difficult to manage...imagine nested lists, for example!
+
+* REM(s) - Root EM(s) are relative to the root HTML element's font-size and are often easier to work with.
+    If the root font-size is 20px, 1rem is always 20px, 2rem is always 40px, etc.
+*/
+
+article {   /* Parent Container */
+    font-size: 20px;
+}
+
+h2 {    /* Child Element */
+    font-size: 5em; /* Font size would be 100px */
+    margin-left: 1em; /* This is relative to the font-size of THIS element, so it would also be 100px */
+}
