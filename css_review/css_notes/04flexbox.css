@@ -1,0 +1,25 @@
+/*
+! Flexbox Review
+! (Notes will be only new knowledge or parts I'd like to reinforce)
+Reminder: <------------> (x) is the main axis, vertical (y) is the cross-axis.
+    * Justify-content is for the main axis.
+    * Align-items is for the cross-axis.
+
+! Align Content
+* Used to control or distribute -space- along the cross-axis but -only- if we have multiple rows.
+* Can only be used when utilizing flex-wrap.
+
+! Align Self
+* Added to an individual item in the flex container and it allows us to change the alignment along the cross-axis.
+
+! Flex Basis, Grow, & Shrink
+* Flex-basis: Defines the initial size of an element before additional space is distributed.
+* Flex-grow: Controls the amount of available space an element should take up; accepts a unit-less number value.
+"If there's extra space, eat up this proportion of what's left over."
+This can be manipulated further with properties such as min-width and max-width.
+* Flex-shrink: If items are larger than the container, they shrink according to flex-shrink.
+
+! Flex Shorthand
+* Flex allows us to set all three of the above properties in one go.
+? flex: 2 <-- flex-grow: 2,  flex: 1 30px <--- flex-grow: 1, flex-basis: 30px, flex: 2 2 10% <-- flex-grow: 2, flex-shrink: 2, flex-basis: 10%.
+*/
