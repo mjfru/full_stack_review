@@ -1,0 +1,36 @@
+/*
+! Responsive Design
+! (Notes will be only new knowledge or parts I'd like to reinforce)
+Early on, it was common to create seperate stylesheets for different devices, or even completely different websites for each size.
+?   (Remember m.something.com?)
+These days, we typically create ONE website and stylesheet that is able to respond to different device sizes and features.
+* Media querties allow us to modify our styles depending on particular parameters like screen width or device type.
+*/
+
+/* @media (min-width: 600px) and (max-width: 800px) {
+    h1 {
+        color: purple;
+    }
+} */
+
+@media (max-width: 1500px) {
+    h1 {
+        color: yellow;
+    }
+}
+@media (max-width: 1000px) {
+    h1 {
+        color: orange;
+    }
+}
+@media (max-width: 500px) {
+    h1 {
+        color: red;
+    }
+}
+
+@media (orientation: landscape) {
+    body {
+        background-color: aquamarine;
+    }
+}
