@@ -29,6 +29,84 @@
       </ul>
     </div>
   </nav>
+
+  <section class="container-fluid px-0">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="text-white text-center d-none d-lg-block mt-5" id="heading-group">
+          <h1>MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+          <h1>MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+          <h1>MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+          <h1>MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+          <h1>MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+          <h1>MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+          <h1>MUSEUM<span>/</span>OF<span>/</span>CANDY</h1>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <img class="img-fluid" src="./imgs/hand2.png" alt="hand with doughnut">
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid px-0">
+    <div class="row align-items-center content">
+      <div class="col-md-6 order-2 order-md-1">
+        <img src="./imgs/milk.png" class="img-fluid" alt="milk and dougnuts">
+      </div>
+      <div class="col-md-6 text-center order-1 order-md-2">
+        <div class="row justify-content-center">
+          <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+            <h2>MUSEUM OF CANDY</h2>
+            <img src="./imgs/lolli_icon.png" alt="lollipop icon" class="d-none d-lg-inline">
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. At nisi, dicta excepturi similique ratione suscipit ducimus reiciendis, expedita dolore eligendi quibusdam possimus vitae consectetur nobis fuga deleniti tenetur officia eveniet asperiores dignissimos impedit neque? Nostrum, optio. Sequi ex distinctio optio in necessitatibus esse, recusandae doloribus similique impedit rem dicta provident.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row align-items-center content">
+      <div class="col-md-6 text-center">
+        <div class="row justify-content-center">
+          <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+            <h2>MUSEUM OF CANDY</h2>
+            <img src="./imgs/lolli_icon.png" alt="lollipop icon" class="d-none d-lg-inline">
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. At nisi, dicta excepturi similique ratione suscipit ducimus reiciendis, expedita dolore eligendi quibusdam possimus vitae consectetur nobis fuga deleniti tenetur officia eveniet asperiores dignissimos impedit neque? Nostrum, optio. Sequi ex distinctio optio in necessitatibus esse, recusandae doloribus similique impedit rem dicta provident.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="./imgs/gumball.png" class="img-fluid" alt="gumballs">
+      </div>
+    </div>
+    <div class="row align-items-center content">
+      <div class="col-md-6 order-2 order-md-1">
+        <img src="./imgs/sprinkles.png" class="img-fluid" alt="sprinkles">
+      </div>
+      <div class="col-md-6 text-center order-1 order-md-2">
+        <div class="row justify-content-center">
+          <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+            <h2>MUSEUM OF CANDY</h2>
+            <img src="./imgs/lolli_icon.png" alt="lollipop icon" class="d-none d-lg-inline">
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. At nisi, dicta excepturi similique ratione suscipit ducimus reiciendis, expedita dolore eligendi quibusdam possimus vitae consectetur nobis fuga deleniti tenetur officia eveniet asperiores dignissimos impedit neque? Nostrum, optio. Sequi ex distinctio optio in necessitatibus esse, recusandae doloribus similique impedit rem dicta provident.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+        $(document).scroll(function () {
+            var $nav = $("#mainNavbar");
+            $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+    });
+</script>
 </body>
 </html>
