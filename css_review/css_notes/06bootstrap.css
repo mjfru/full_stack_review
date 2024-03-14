@@ -29,4 +29,55 @@
     <button aria-label="Close" class="close">
         <span aria-hidden="true" data-dismiss="alert">&times</span>
     </button>
+
+! Bootstrap Grid
+* The grid system that comes baked into Bootstrap allows us to construct our own custom, responsive layouts.
+? Every row in Bootstrap has -12- units of space to divide up.
+    <div class="row">
+        <div class="col-6 bg-success">I am 6 units</div>
+        <div class="col-6 bg-danger">I am 6 units</div>
+    </div>
+    <div class="row>
+        <div class="col-4 bg-danger">I am 4 units</div>
+        <div class="col-2 bg-success">I am 2 units</div>
+        <div class="col-6 bg-secondary">I am 6 units</div>
+    </div>
+* If you don't specify a numerical value for one or all of your columns, it will auto-configure for you.
+
+! Reponsiveness with Bootstrap Grid
+Bootstrap has some built-in sizes for responsiveness (sm, md, lg, etc.)
+Example:    <div class="col-md-6 col-xl-3 bg-success></div>
+            <div class="col-md-6 col-xl-3 bg-success></div>
+These will take up 6 units at medium breakpoints but 3 at extra large ones.
+
+! Grid Utilities
+* Essentially, we can use some flexbox properties to better align our grid to our liking by sticking those properties in the Bootstrap class.
+? i.e. class="justify-content-center"
+They can be used in tandem with our responsive Bootstrap grid as well.
+
+! Bootstrap Forms
+class="form-control" gives us stylized input forms, usually nested in a form-group div to hold labels and inputs togethers.
+? Grid can also be used to customize how big / long these inputs are. I've been annoyed before by their sizing defaults and never realized this.
+<div class="row">
+    <div class="form-group col">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="email">
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="password">
+    </div>
+</div>
+
+* Form-row also exists and just changes the spacing a touch more than the standard 'row' class.
+
+! Navbars
+* While extremely common and convenient, there's quite a bit of syntax to recall; best to visit the docs rather than write up notes here.
+However, these navbars make our lives a lot easier, our webpages responsive, and include some nice features right out of the box.
+
+! Utilities
+* Bootstrap offers lots of utilities to quick add CSS, such as border properties, spacing (with margin and padding), etc.
+
+! Bootstrap Grab Bag
+* Some other common features and useful aspects of Bootstrap are: content cards, carousel (image gallery/slider), dropdown menus, spinners, and modals (pop-up dialogues).
 */
