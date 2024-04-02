@@ -86,4 +86,18 @@ Always the most annoying part of CRUD because we have to find it and specify how
 
   To delete EVERYTHING in a collection, we can also wipe it with:
   db.collection.deleteMany({})
+
+! More Operators
+? What if we want to find specific things or things in a range?
+* $gt - greater than
+    db.collection.find({age: {$gt: 8}})
+* $gte - greater than or equal to
+* $lt - less than
+* $lte - less than or equal to
+* $in - value is 'in' an array in the collection
+    db.collection.find({breed: {$in: ['Mutt', 'Corgi']}})
+* $nin - not 'in'
+* $and
+* $or
+    db.collection.find({$or: [{'personality.catFriend': true}, {age: {$lte: 2}}] })
 */
