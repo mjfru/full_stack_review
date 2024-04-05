@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random</title>
+</head>
+<body>
+  <h1> Your random number is: <%= random %> </h1>
+  <% if(random % 2 === 0) { %>
+    <h2>Even number!</h2>
+  <% } else { %>
+    <h2>Odd number!</h2>
+  <% } %>
+  <h3><%= random % 2 === 0 ? 'Even' : 'Odd' %></h3>
+</body>
+</html>
