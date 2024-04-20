@@ -33,20 +33,8 @@ const seedDB = async () => {
       },
       images: [
         {
-          url: 'https://res.cloudinary.com/dggqzxl0l/image/upload/v1713275180/Intents/qm7ee3o72k36p7usawgv.jpg',
-          filename: 'Intents/qm7ee3o72k36p7usawgv',
-        },
-        {
-          url: 'https://res.cloudinary.com/dggqzxl0l/image/upload/v1713275182/Intents/vtzz83mm3grsrx9zeyad.jpg',
-          filename: 'Intents/vtzz83mm3grsrx9zeyad',
-        },
-        {
           url: 'https://res.cloudinary.com/dggqzxl0l/image/upload/v1713275182/Intents/hgd16i0ss55hc3l4zc10.jpg',
           filename: 'Intents/hgd16i0ss55hc3l4zc10',
-        },
-        {
-          url: 'https://res.cloudinary.com/dggqzxl0l/image/upload/v1713275184/Intents/tkwrtut7fdktoblc51ga.jpg',
-          filename: 'Intents/tkwrtut7fdktoblc51ga',
         }
       ]
     })
