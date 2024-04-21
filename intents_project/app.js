@@ -2,7 +2,6 @@ if(process.env.NODE_ENV !== "production") {
   require('dotenv').config();
 }
 
-
 const express = require("express");
 const path = require("path");
 const mongoose = require("mongoose");
@@ -19,6 +18,7 @@ const userRoutes = require('./routes/users.js')
 const campgroundRoutes = require('./routes/campgrounds.js')
 const reviewRoutes = require('./routes/reviews.js');
 
+const mongoSanitize = require('express-mongo-sanitize');
 
 mongoose.connect("mongodb://127.0.0.1:27017/intents", {});
 
@@ -35,8 +35,10 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
+app.use(mongoSanitize());
 
 const sessionConfig = {
+  name: 'intentsSession',
   secret: 'thisshouldbeabettersecret',
   resave: false,
   saveUninitialized: true,
@@ -58,6 +60,7 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
 app.use((req, res, next) => {
+  // console.log(req.query);
   // console.log(req.session);
   res.locals.currentUser = req.user;
   res.locals.success = req.flash('success');
