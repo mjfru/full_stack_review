@@ -1,0 +1,15 @@
+.container {
+    border: 5px solid teal;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 20px;
+}
+
+img {
+    width: 150px;
+}
+
+h1 {
+    color: teal;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
